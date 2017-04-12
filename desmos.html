@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Desmos Mathimus</title>
+</head>
+<body>
+  <style type='text/css'>
+    body {
+      margin: 0pt;
+      width:  100%;
+      height: 100%;
+
+      perspective: 600px;
+    }
+
+    #calculator {
+      width:  90%;
+      height: 720px;
+
+      /* transform: rotateY(10deg) translateX(150px) translateY(50px); */
+    }
+  </style>
+
+  <script src='https://www.desmos.com/api/v0.8/calculator.js?apiKey=dcb31709b452b1cf9dc26972add0fda6'></script>
+  <script type='text/javascript'>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      'use strict';
+
+      const elt = document.getElementById('calculator');
+      const cal = Desmos.GraphingCalculator(elt, {colors: ['#D50000', '#C51162', '#9C27B0',
+                                                           '#5E35B1', '#3F51B5', '#42A5F5',
+                                                           '#4CAF50', '#FFC107', '#CDDC39']});
+      cal.updateSettings({fontSize: 22});
+
+      window.cal = cal;
+
+    });
+  </script>
+
+  <div id='calculator'></div>
+</body>
+</html>
