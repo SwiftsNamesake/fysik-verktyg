@@ -54,11 +54,35 @@ module Dimension where
 --          the dimensionless number 1.
 --        - Speaking of which, is luminous intensity really a fundamental dimension?
 data Dimension i = Dimension {
-                     fLength       :: i,
-                     fTime         :: i,
-                     fMass         :: i,
-                     fCharge       :: i,
-                     fTemperature  :: i,
-                     fAmountOfSubstance :: i,
-                     fLuminousIntensity :: i
+                     fLength       :: i!,
+                     fTime         :: i!,
+                     fMass         :: i!,
+                     fCharge       :: i!,
+                     fTemperature  :: i!,
+                     fAmountOfSubstance :: i!,
+                     fLuminousIntensity :: i!
                    } deriving (Show, Eq)
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+length :: Integral i => Dimension i
+length = Dimension 1 0 0 0 0 0 0
+
+time :: Integral i => Dimension i
+time = Dimension 0 1 0 0 0 0 0
+
+mass :: Integral i => Dimension i
+mass = Dimension 0 0 1 0 0 0 0
+
+charge :: Integral i => Dimension i
+charge = Dimension 0 0 0 1 0 0 0
+
+temperature :: Integral i => Dimension i
+temperature = Dimension 0 0 0 0 1 0 0
+
+amountOfSubstance :: Integral i => Dimension i
+amountOfSubstance = Dimension 0 0 0 0 0 1 0
+
+luminousIntensity :: Integral i => Dimension i
+luminousIntensity = Dimension 0 0 0 0 0 0 1
+
