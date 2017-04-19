@@ -4,8 +4,8 @@
 -- Copyright   : (c) Jonatan H Sundqvist, 2017
 -- License     : MIT
 -- Maintainer  : Jonatan H Sundqvist
--- Stability   : stable
--- Portability : portable
+-- Stability   : experimental
+-- Portability : GHC
 -- 
 
 -- TODO | - Compatibility layer (eg. a module that defines a bridge between this module and the Prelude)
