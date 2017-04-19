@@ -1,0 +1,1520 @@
+
+==================== FINAL INTERFACE ====================
+2017-04-18 15:05:46.3379243 UTC
+
+interface constants-united-0.1.0.0-Dsw9qjzcukv1YjvdfUjtl9:Constants [family instance module] 8002
+  interface hash: f036d98807ce1c09b34ecc2c16a97209
+  ABI hash: 629ec41bc0a5d376058dc68abb6f221a
+  export-list hash: dd86df4fc322e9e9fe536f1dd2305d8f
+  orphan hash: 693e9af84d3dfcc71e640e005bdc5e2e
+  flag hash: 7b52baba7816dc41de76ad8aced7ccbd
+  sig of: Nothing
+  used TH splices: False
+  where
+exports:
+  Constants.Divide{Constants./ Constants.Quotient}
+  Constants.Exponentiate{Constants.**}
+  Constants.Multiply{Constants.* Constants.Product}
+  Constants.SIBaseUnit{Constants.Ampere Constants.Kelvin Constants.Kilogram Constants.Metre Constants.Second}
+  Constants.Unit{Constants.Unit}
+module dependencies:
+package dependencies: array-0.5.1.1@array-0.5.1.1 base-4.9.1.0*
+                      containers-0.5.7.1@containers-0.5.7.1*
+                      deepseq-1.4.2.0@deepseq-1.4.2.0 ghc-prim-0.5.0.0
+                      integer-gmp-1.0.0.1
+orphans: base-4.9.1.0:GHC.Base base-4.9.1.0:GHC.Float
+family instance modules: base-4.9.1.0:Control.Applicative
+                         base-4.9.1.0:Data.Complex base-4.9.1.0:Data.Either
+                         base-4.9.1.0:Data.Functor.Const base-4.9.1.0:Data.Functor.Identity
+                         base-4.9.1.0:Data.List.NonEmpty base-4.9.1.0:Data.Monoid
+                         base-4.9.1.0:Data.Semigroup base-4.9.1.0:Data.Type.Equality
+                         base-4.9.1.0:Data.Version base-4.9.1.0:Data.Void
+                         base-4.9.1.0:GHC.Exts base-4.9.1.0:GHC.Generics
+                         base-4.9.1.0:GHC.IO.Exception base-4.9.1.0:GHC.TypeLits
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base
+                         containers-0.5.7.1@containers-0.5.7.1:Data.Set.Base
+import  -/  base-4.9.1.0:Control.Applicative 2c56a0c43327cbbcb6e7a55bf05443c9
+import  -/  base-4.9.1.0:GHC.Base 4caea1123ecf4b46e27cbccd6d279377
+import  -/  base-4.9.1.0:GHC.Enum 3beb5abd88e2173130728ffba8194381
+import  -/  base-4.9.1.0:GHC.Err 20faef8829fd13c027d0ee2213637534
+import  -/  base-4.9.1.0:GHC.Num 38b8aac8807c096c7f3ca3c1eff02939
+import  -/  base-4.9.1.0:GHC.Show eca5834daba3b6a2bbbe64ab52056707
+import  -/  base-4.9.1.0:Prelude 74b3e204395920329f6de9d97206abe9
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Base dfcca0a6b3fe956067f7db6df4d400c2
+import  -/  containers-0.5.7.1@containers-0.5.7.1:Data.Map.Strict 5978345e8d03c94ea37df1bd4052990d
+import  -/  ghc-prim-0.5.0.0:GHC.Classes 16d48e012d23eaef9bca91ccdd572c02
+import  -/  ghc-prim-0.5.0.0:GHC.Types 89f8de4f08018c9177c98d979eae0e45
+import  -/  integer-gmp-1.0.0.1:GHC.Integer.Type 5e60b761569ee353529e98a36b72df11
+317af82592b88ef63271e38ee09224ab
+  $fBoundedSIBaseUnit :: GHC.Enum.Bounded Constants.SIBaseUnit
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Constants.SIBaseUnit Constants.Metre Constants.Kelvin -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit :: GHC.Enum.Enum Constants.SIBaseUnit
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Constants.SIBaseUnit
+                  Constants.$fEnumSIBaseUnit_$csucc
+                  Constants.$fEnumSIBaseUnit_$cpred
+                  Constants.$fEnumSIBaseUnit_$ctoEnum
+                  Constants.$fEnumSIBaseUnit_$cfromEnum
+                  Constants.$fEnumSIBaseUnit_$cenumFrom
+                  Constants.$fEnumSIBaseUnit_$cenumFromThen
+                  Constants.$fEnumSIBaseUnit_$cenumFromTo
+                  Constants.$fEnumSIBaseUnit_$cenumFromThenTo -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit1 :: [Constants.SIBaseUnit]
+  {- Unfolding: (Constants.$fEnumSIBaseUnit_go5 4#) -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit2 :: [Constants.SIBaseUnit]
+  {- Unfolding: (Constants.$fEnumSIBaseUnit_go6 3#) -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit3 :: [Constants.SIBaseUnit]
+  {- Unfolding: (Constants.$fEnumSIBaseUnit_go7 2#) -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit4 :: [Constants.SIBaseUnit]
+  {- Unfolding: (Constants.$fEnumSIBaseUnit_go8 1#) -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit5 :: [Constants.SIBaseUnit]
+  {- Unfolding: (Constants.$fEnumSIBaseUnit_go9 0#) -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit6 :: GHC.Prim.Int# -> Constants.SIBaseUnit
+  {- Arity: 1, Strictness: <L,U>x -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit7 :: Constants.SIBaseUnit
+  {- Strictness: x -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit8 :: Constants.SIBaseUnit
+  {- Strictness: x -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_$cenumFrom ::
+    Constants.SIBaseUnit -> [Constants.SIBaseUnit]
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: (\ (a :: Constants.SIBaseUnit) ->
+                 case a of wild {
+                   Constants.Metre -> Constants.$fEnumSIBaseUnit5
+                   Constants.Second -> Constants.$fEnumSIBaseUnit4
+                   Constants.Kilogram -> Constants.$fEnumSIBaseUnit3
+                   Constants.Ampere -> Constants.$fEnumSIBaseUnit2
+                   Constants.Kelvin -> Constants.$fEnumSIBaseUnit1 }) -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_$cenumFromThen ::
+    Constants.SIBaseUnit
+    -> Constants.SIBaseUnit -> [Constants.SIBaseUnit]
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Constants.SIBaseUnit)
+                   (b :: Constants.SIBaseUnit) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Constants.SIBaseUnit]
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (a# :: GHC.Prim.Int#)[OneShot] ->
+                     let {
+                       $j1 :: GHC.Prim.Int# -> [Constants.SIBaseUnit]
+                         {- Arity: 1, Strictness: <S,U> -}
+                       = \ (b# :: GHC.Prim.Int#)[OneShot] ->
+                         let {
+                           $j2 :: GHC.Prim.Int# -> [Constants.SIBaseUnit]
+                             {- Arity: 1, Strictness: <S,U> -}
+                           = \ (y :: GHC.Prim.Int#)[OneShot] ->
+                             case GHC.Prim.tagToEnum#
+                                    @ GHC.Types.Bool
+                                    (GHC.Prim.>=# b# a#) of wild {
+                               GHC.Types.False
+                               -> GHC.Enum.efdtIntDnFB
+                                    @ [Constants.SIBaseUnit]
+                                    Constants.$fEnumSIBaseUnit_c
+                                    (GHC.Types.[] @ Constants.SIBaseUnit)
+                                    a#
+                                    b#
+                                    y
+                               GHC.Types.True
+                               -> GHC.Enum.efdtIntUpFB
+                                    @ [Constants.SIBaseUnit]
+                                    Constants.$fEnumSIBaseUnit_c
+                                    (GHC.Types.[] @ Constants.SIBaseUnit)
+                                    a#
+                                    b#
+                                    y }
+                         } in
+                         case GHC.Prim.tagToEnum#
+                                @ GHC.Types.Bool
+                                (GHC.Prim.># a# b#) of wild {
+                           GHC.Types.False -> $j2 4# GHC.Types.True -> $j2 0# }
+                     } in
+                     case b of wild {
+                       Constants.Metre -> $j1 0#
+                       Constants.Second -> $j1 1#
+                       Constants.Kilogram -> $j1 2#
+                       Constants.Ampere -> $j1 3#
+                       Constants.Kelvin -> $j1 4# }
+                 } in
+                 case a of wild {
+                   Constants.Metre -> $j 0#
+                   Constants.Second -> $j 1#
+                   Constants.Kilogram -> $j 2#
+                   Constants.Ampere -> $j 3#
+                   Constants.Kelvin -> $j 4# }) -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_$cenumFromThenTo ::
+    Constants.SIBaseUnit
+    -> Constants.SIBaseUnit
+    -> Constants.SIBaseUnit
+    -> [Constants.SIBaseUnit]
+  {- Arity: 3, Strictness: <S,1*U><S,1*U><S,1*U> -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_$cenumFromTo ::
+    Constants.SIBaseUnit
+    -> Constants.SIBaseUnit -> [Constants.SIBaseUnit]
+  {- Arity: 2, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Constants.SIBaseUnit)
+                   (y :: Constants.SIBaseUnit) ->
+                 let {
+                   $j :: GHC.Prim.Int# -> [Constants.SIBaseUnit]
+                     {- Arity: 1, Strictness: <S,U> -}
+                   = \ (x1 :: GHC.Prim.Int#)[OneShot] ->
+                     case y of wild {
+                       Constants.Metre
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 0#) of wild1 {
+                            GHC.Types.False -> Constants.$fEnumSIBaseUnit_go4 x1
+                            GHC.Types.True -> GHC.Types.[] @ Constants.SIBaseUnit }
+                       Constants.Second
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 1#) of wild1 {
+                            GHC.Types.False -> Constants.$fEnumSIBaseUnit_go3 x1
+                            GHC.Types.True -> GHC.Types.[] @ Constants.SIBaseUnit }
+                       Constants.Kilogram
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 2#) of wild1 {
+                            GHC.Types.False -> Constants.$fEnumSIBaseUnit_go2 x1
+                            GHC.Types.True -> GHC.Types.[] @ Constants.SIBaseUnit }
+                       Constants.Ampere
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 3#) of wild1 {
+                            GHC.Types.False -> Constants.$fEnumSIBaseUnit_go1 x1
+                            GHC.Types.True -> GHC.Types.[] @ Constants.SIBaseUnit }
+                       Constants.Kelvin
+                       -> case GHC.Prim.tagToEnum#
+                                 @ GHC.Types.Bool
+                                 (GHC.Prim.># x1 4#) of wild1 {
+                            GHC.Types.False -> Constants.$fEnumSIBaseUnit_go x1
+                            GHC.Types.True -> GHC.Types.[] @ Constants.SIBaseUnit } }
+                 } in
+                 case x of wild {
+                   Constants.Metre -> $j 0#
+                   Constants.Second -> $j 1#
+                   Constants.Kilogram -> $j 2#
+                   Constants.Ampere -> $j 3#
+                   Constants.Kelvin -> $j 4# }) -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_$cfromEnum ::
+    Constants.SIBaseUnit -> GHC.Types.Int
+  {- Arity: 1, HasNoCafRefs, Strictness: <S,1*U>m, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: Constants.SIBaseUnit) ->
+                 case w of wild {
+                   Constants.Metre -> GHC.Types.I# 0#
+                   Constants.Second -> GHC.Types.I# 1#
+                   Constants.Kilogram -> GHC.Types.I# 2#
+                   Constants.Ampere -> GHC.Types.I# 3#
+                   Constants.Kelvin -> GHC.Types.I# 4# }) -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_$cpred ::
+    Constants.SIBaseUnit -> Constants.SIBaseUnit
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Constants.SIBaseUnit) ->
+                 case a of wild {
+                   Constants.Metre -> Constants.$fEnumSIBaseUnit7
+                   Constants.Second -> Constants.Metre
+                   Constants.Kilogram -> Constants.Second
+                   Constants.Ampere -> Constants.Kilogram
+                   Constants.Kelvin -> Constants.Ampere }) -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_$csucc ::
+    Constants.SIBaseUnit -> Constants.SIBaseUnit
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (a :: Constants.SIBaseUnit) ->
+                 case a of wild {
+                   Constants.Metre -> Constants.Second
+                   Constants.Second -> Constants.Kilogram
+                   Constants.Kilogram -> Constants.Ampere
+                   Constants.Ampere -> Constants.Kelvin
+                   Constants.Kelvin -> Constants.$fEnumSIBaseUnit8 }) -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_$ctoEnum :: GHC.Types.Int -> Constants.SIBaseUnit
+  {- Arity: 1, Strictness: <S(S),1*U(U)>, Inline: INLINE[0],
+     Unfolding: InlineRule (1, True, False)
+                (\ (w :: GHC.Types.Int) ->
+                 case w of ww { GHC.Types.I# ww1 -> Constants.$w$ctoEnum ww1 }) -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_c ::
+    GHC.Types.Int -> [Constants.SIBaseUnit] -> [Constants.SIBaseUnit]
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,1*U(U)><L,U>,
+     Unfolding: InlineRule (2, True, False)
+                (\ (x :: GHC.Types.Int) (ys :: [Constants.SIBaseUnit]) ->
+                 GHC.Types.:
+                   @ Constants.SIBaseUnit
+                   (case x of wild { GHC.Types.I# a ->
+                    GHC.Prim.tagToEnum# @ Constants.SIBaseUnit a })
+                   ys) -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_go :: GHC.Prim.Int# -> [Constants.SIBaseUnit]
+  {- Arity: 1, Strictness: <L,U> -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_go1 :: GHC.Prim.Int# -> [Constants.SIBaseUnit]
+  {- Arity: 1, Strictness: <L,U> -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_go2 :: GHC.Prim.Int# -> [Constants.SIBaseUnit]
+  {- Arity: 1, Strictness: <L,U> -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_go3 :: GHC.Prim.Int# -> [Constants.SIBaseUnit]
+  {- Arity: 1, Strictness: <L,U> -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_go4 :: GHC.Prim.Int# -> [Constants.SIBaseUnit]
+  {- Arity: 1, Strictness: <L,U> -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_go5 :: GHC.Prim.Int# -> [Constants.SIBaseUnit]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_go6 :: GHC.Prim.Int# -> [Constants.SIBaseUnit]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_go7 :: GHC.Prim.Int# -> [Constants.SIBaseUnit]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_go8 :: GHC.Prim.Int# -> [Constants.SIBaseUnit]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+317af82592b88ef63271e38ee09224ab
+  $fEnumSIBaseUnit_go9 :: GHC.Prim.Int# -> [Constants.SIBaseUnit]
+  {- Arity: 1, HasNoCafRefs, Strictness: <L,U> -}
+317af82592b88ef63271e38ee09224ab
+  $fEqSIBaseUnit :: GHC.Classes.Eq Constants.SIBaseUnit
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Constants.SIBaseUnit
+                  Constants.$fEqSIBaseUnit_$c==
+                  Constants.$fEqSIBaseUnit_$c/= -}
+317af82592b88ef63271e38ee09224ab
+  $fEqSIBaseUnit_$c/= ::
+    Constants.SIBaseUnit -> Constants.SIBaseUnit -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Constants.SIBaseUnit)
+                   (b :: Constants.SIBaseUnit) ->
+                 case a of wild {
+                   Constants.Metre
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Constants.Metre -> GHC.Types.False }
+                   Constants.Second
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Constants.Second -> GHC.Types.False }
+                   Constants.Kilogram
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Constants.Kilogram -> GHC.Types.False }
+                   Constants.Ampere
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Constants.Ampere -> GHC.Types.False }
+                   Constants.Kelvin
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Constants.Kelvin -> GHC.Types.False } }) -}
+317af82592b88ef63271e38ee09224ab
+  $fEqSIBaseUnit_$c== ::
+    Constants.SIBaseUnit -> Constants.SIBaseUnit -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (ds :: Constants.SIBaseUnit)
+                   (ds1 :: Constants.SIBaseUnit) ->
+                 case ds of wild {
+                   Constants.Metre
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Constants.Metre -> GHC.Types.True }
+                   Constants.Second
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Constants.Second -> GHC.Types.True }
+                   Constants.Kilogram
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Constants.Kilogram -> GHC.Types.True }
+                   Constants.Ampere
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False Constants.Ampere -> GHC.Types.True }
+                   Constants.Kelvin
+                   -> case ds1 of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Constants.Kelvin -> GHC.Types.True } }) -}
+e91912f0e41ffcba00bc9e42178657d2
+  $fEqUnit ::
+    (GHC.Classes.Eq i, GHC.Classes.Eq base) =>
+    GHC.Classes.Eq (Constants.Unit base i)
+  DFunId
+  {- Arity: 2, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ base
+                      @ i
+                      ($dEq :: GHC.Classes.Eq i)
+                      ($dEq1 :: GHC.Classes.Eq base).
+                  @ (Constants.Unit base i)
+                  (Constants.$fEqUnit_$c== @ base @ i $dEq $dEq1)
+                  (Constants.$fEqUnit_$c/= @ base @ i $dEq $dEq1) -}
+e91912f0e41ffcba00bc9e42178657d2
+  $fEqUnit_$c/= ::
+    (GHC.Classes.Eq i, GHC.Classes.Eq base) =>
+    Constants.Unit base i -> Constants.Unit base i -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)><S,1*U(U)><S,1*U(U)>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ base
+                   @ i
+                   ($dEq :: GHC.Classes.Eq i)
+                   ($dEq1 :: GHC.Classes.Eq base)
+                   (a :: Constants.Unit base i)
+                   (b :: Constants.Unit base i) ->
+                 case a of wild { Constants.Unit a1 ->
+                 case b of wild1 { Constants.Unit b1 ->
+                 case Data.Map.Base.$fEqMap_$c==
+                        @ base
+                        @ i
+                        $dEq1
+                        $dEq
+                        a1
+                        b1 of wild2 {
+                   GHC.Types.False -> GHC.Types.True
+                   GHC.Types.True -> GHC.Types.False } } }) -}
+e91912f0e41ffcba00bc9e42178657d2
+  $fEqUnit_$c== ::
+    (GHC.Classes.Eq i, GHC.Classes.Eq base) =>
+    Constants.Unit base i -> Constants.Unit base i -> GHC.Types.Bool
+  {- Arity: 4, HasNoCafRefs,
+     Strictness: <L,U(C(C1(U)),A)><L,U(C(C1(U)),A)><S,1*U(U)><S,1*U(U)>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ base
+                   @ i
+                   ($dEq :: GHC.Classes.Eq i)
+                   ($dEq1 :: GHC.Classes.Eq base)
+                   (ds :: Constants.Unit base i)
+                   (ds1 :: Constants.Unit base i) ->
+                 case ds of wild { Constants.Unit a1 ->
+                 case ds1 of wild1 { Constants.Unit b1 ->
+                 Data.Map.Base.$fEqMap_$c== @ base @ i $dEq1 $dEq a1 b1 } }) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  $fMultiplyDoubleUnit ::
+    Constants.Multiply GHC.Types.Double (Constants.Unit base i)
+  DFunId
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U(U)>m,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Constants.$fMultiplyDoubleUnit_$c*
+                  `cast`
+                (forall (base :: <*>_N) (i :: <*>_N).
+                 Sym (Constants.N:Multiply[0]
+                          <GHC.Types.Double>_N <Constants.Unit base i>_N)) -}
+41ebf911cf0b0941a84ca73f6b1c3e44
+  $fMultiplyDoubleUnit1 ::
+    GHC.Types.Double -> Constants.Unit base i -> Constants.Unit base i
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U(U)>m,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ base
+                   @ i
+                   (a :: GHC.Types.Double)
+                   (b :: Constants.Unit base i) ->
+                 b) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  $fMultiplyDoubleUnit_$c* ::
+    GHC.Types.Double
+    -> Constants.Unit base i
+    -> Constants.Product GHC.Types.Double (Constants.Unit base i)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U(U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Constants.$fMultiplyDoubleUnit1
+                  `cast`
+                (forall (base :: <*>_N) (i :: <*>_N).
+                 <GHC.Types.Double>_R
+                 ->_R <Constants.Unit base i>_R
+                 ->_R Sub (Sym (Constants.D:R:ProductDoubleUnit[0]
+                                    <i>_N <base>_N))) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  $fMultiplyFloatUnit ::
+    Constants.Multiply GHC.Types.Float (Constants.Unit base i)
+  DFunId
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U(U)>m,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Constants.$fMultiplyFloatUnit_$c*
+                  `cast`
+                (forall (base :: <*>_N) (i :: <*>_N).
+                 Sym (Constants.N:Multiply[0]
+                          <GHC.Types.Float>_N <Constants.Unit base i>_N)) -}
+8d19df80e055a6d9169aeb2ed47e8775
+  $fMultiplyFloatUnit1 ::
+    GHC.Types.Float -> Constants.Unit base i -> Constants.Unit base i
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U(U)>m,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ base
+                   @ i
+                   (a :: GHC.Types.Float)
+                   (b :: Constants.Unit base i) ->
+                 b) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  $fMultiplyFloatUnit_$c* ::
+    GHC.Types.Float
+    -> Constants.Unit base i
+    -> Constants.Product GHC.Types.Float (Constants.Unit base i)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U(U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Constants.$fMultiplyFloatUnit1
+                  `cast`
+                (forall (base :: <*>_N) (i :: <*>_N).
+                 <GHC.Types.Float>_R
+                 ->_R <Constants.Unit base i>_R
+                 ->_R Sub (Sym (Constants.D:R:ProductFloatUnit[0]
+                                    <i>_N <base>_N))) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  $fMultiplyIntUnit ::
+    Constants.Multiply GHC.Types.Int (Constants.Unit base i)
+  DFunId
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U(U)>m,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Constants.$fMultiplyIntUnit_$c*
+                  `cast`
+                (forall (base :: <*>_N) (i :: <*>_N).
+                 Sym (Constants.N:Multiply[0]
+                          <GHC.Types.Int>_N <Constants.Unit base i>_N)) -}
+fd70f66769c4776966126194534e6182
+  $fMultiplyIntUnit1 ::
+    GHC.Types.Int -> Constants.Unit base i -> Constants.Unit base i
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U(U)>m,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ base @ i (a :: GHC.Types.Int) (b :: Constants.Unit base i) ->
+                 b) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  $fMultiplyIntUnit_$c* ::
+    GHC.Types.Int
+    -> Constants.Unit base i
+    -> Constants.Product GHC.Types.Int (Constants.Unit base i)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U(U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Constants.$fMultiplyIntUnit1
+                  `cast`
+                (forall (base :: <*>_N) (i :: <*>_N).
+                 <GHC.Types.Int>_R
+                 ->_R <Constants.Unit base i>_R
+                 ->_R Sub (Sym (Constants.D:R:ProductIntUnit[0] <i>_N <base>_N))) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  $fMultiplyIntegerUnit ::
+    Constants.Multiply GHC.Integer.Type.Integer (Constants.Unit base i)
+  DFunId
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U(U)>m,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Constants.$fMultiplyIntegerUnit_$c*
+                  `cast`
+                (forall (base :: <*>_N) (i :: <*>_N).
+                 Sym (Constants.N:Multiply[0]
+                          <GHC.Integer.Type.Integer>_N <Constants.Unit base i>_N)) -}
+dcb7cad0afe402143739fdf215273303
+  $fMultiplyIntegerUnit1 ::
+    GHC.Integer.Type.Integer
+    -> Constants.Unit base i -> Constants.Unit base i
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U(U)>m,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ base
+                   @ i
+                   (a :: GHC.Integer.Type.Integer)
+                   (b :: Constants.Unit base i) ->
+                 b) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  $fMultiplyIntegerUnit_$c* ::
+    GHC.Integer.Type.Integer
+    -> Constants.Unit base i
+    -> Constants.Product
+         GHC.Integer.Type.Integer (Constants.Unit base i)
+  {- Arity: 2, HasNoCafRefs, Strictness: <L,A><S,1*U(U)>m,
+     Unfolding: InlineRule (0, True, True)
+                Constants.$fMultiplyIntegerUnit1
+                  `cast`
+                (forall (base :: <*>_N) (i :: <*>_N).
+                 <GHC.Integer.Type.Integer>_R
+                 ->_R <Constants.Unit base i>_R
+                 ->_R Sub (Sym (Constants.D:R:ProductIntegerUnit[0]
+                                    <i>_N <base>_N))) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  $fMultiplyUnitDouble ::
+    Constants.Multiply (Constants.Unit base i) GHC.Types.Double
+  DFunId
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><L,A>m,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Constants.$fMultiplyUnitDouble_$c*
+                  `cast`
+                (forall (base :: <*>_N) (i :: <*>_N).
+                 Sym (Constants.N:Multiply[0]
+                          <Constants.Unit base i>_N <GHC.Types.Double>_N)) -}
+56c8c270feffb597d5f73a5dcc2e9698
+  $fMultiplyUnitDouble1 ::
+    Constants.Unit base i -> GHC.Types.Double -> Constants.Unit base i
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><L,A>m,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ base
+                   @ i
+                   (a :: Constants.Unit base i)
+                   (b :: GHC.Types.Double) ->
+                 a) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  $fMultiplyUnitDouble_$c* ::
+    Constants.Unit base i
+    -> GHC.Types.Double
+    -> Constants.Product (Constants.Unit base i) GHC.Types.Double
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><L,A>m,
+     Unfolding: InlineRule (0, True, True)
+                Constants.$fMultiplyUnitDouble1
+                  `cast`
+                (forall (base :: <*>_N) (i :: <*>_N).
+                 <Constants.Unit base i>_R
+                 ->_R <GHC.Types.Double>_R
+                 ->_R Sub (Sym (Constants.D:R:ProductUnitDouble[0]
+                                    <i>_N <base>_N))) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  $fMultiplyUnitFloat ::
+    Constants.Multiply (Constants.Unit base i) GHC.Types.Float
+  DFunId
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><L,A>m,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Constants.$fMultiplyUnitFloat_$c*
+                  `cast`
+                (forall (base :: <*>_N) (i :: <*>_N).
+                 Sym (Constants.N:Multiply[0]
+                          <Constants.Unit base i>_N <GHC.Types.Float>_N)) -}
+c83c95205ba80a0016a82fa357c61a1c
+  $fMultiplyUnitFloat1 ::
+    Constants.Unit base i -> GHC.Types.Float -> Constants.Unit base i
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><L,A>m,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ base
+                   @ i
+                   (a :: Constants.Unit base i)
+                   (b :: GHC.Types.Float) ->
+                 a) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  $fMultiplyUnitFloat_$c* ::
+    Constants.Unit base i
+    -> GHC.Types.Float
+    -> Constants.Product (Constants.Unit base i) GHC.Types.Float
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><L,A>m,
+     Unfolding: InlineRule (0, True, True)
+                Constants.$fMultiplyUnitFloat1
+                  `cast`
+                (forall (base :: <*>_N) (i :: <*>_N).
+                 <Constants.Unit base i>_R
+                 ->_R <GHC.Types.Float>_R
+                 ->_R Sub (Sym (Constants.D:R:ProductUnitFloat[0]
+                                    <i>_N <base>_N))) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  $fMultiplyUnitInt ::
+    Constants.Multiply (Constants.Unit base i) GHC.Types.Int
+  DFunId
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><L,A>m,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Constants.$fMultiplyUnitInt_$c*
+                  `cast`
+                (forall (base :: <*>_N) (i :: <*>_N).
+                 Sym (Constants.N:Multiply[0]
+                          <Constants.Unit base i>_N <GHC.Types.Int>_N)) -}
+371ff95a3e45b393e174673eb06b3032
+  $fMultiplyUnitInt1 ::
+    Constants.Unit base i -> GHC.Types.Int -> Constants.Unit base i
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><L,A>m,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ base @ i (a :: Constants.Unit base i) (b :: GHC.Types.Int) ->
+                 a) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  $fMultiplyUnitInt_$c* ::
+    Constants.Unit base i
+    -> GHC.Types.Int
+    -> Constants.Product (Constants.Unit base i) GHC.Types.Int
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><L,A>m,
+     Unfolding: InlineRule (0, True, True)
+                Constants.$fMultiplyUnitInt1
+                  `cast`
+                (forall (base :: <*>_N) (i :: <*>_N).
+                 <Constants.Unit base i>_R
+                 ->_R <GHC.Types.Int>_R
+                 ->_R Sub (Sym (Constants.D:R:ProductUnitInt[0] <i>_N <base>_N))) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  $fMultiplyUnitInteger ::
+    Constants.Multiply (Constants.Unit base i) GHC.Integer.Type.Integer
+  DFunId
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><L,A>m,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (0, False, True)
+                Constants.$fMultiplyUnitInteger_$c*
+                  `cast`
+                (forall (base :: <*>_N) (i :: <*>_N).
+                 Sym (Constants.N:Multiply[0]
+                          <Constants.Unit base i>_N <GHC.Integer.Type.Integer>_N)) -}
+0c422ac24b02372a7f07af399be1b5d3
+  $fMultiplyUnitInteger1 ::
+    Constants.Unit base i
+    -> GHC.Integer.Type.Integer -> Constants.Unit base i
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><L,A>m,
+     Unfolding: InlineRule (2, True, True)
+                (\ @ base
+                   @ i
+                   (a :: Constants.Unit base i)
+                   (b :: GHC.Integer.Type.Integer) ->
+                 a) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  $fMultiplyUnitInteger_$c* ::
+    Constants.Unit base i
+    -> GHC.Integer.Type.Integer
+    -> Constants.Product
+         (Constants.Unit base i) GHC.Integer.Type.Integer
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U(U)><L,A>m,
+     Unfolding: InlineRule (0, True, True)
+                Constants.$fMultiplyUnitInteger1
+                  `cast`
+                (forall (base :: <*>_N) (i :: <*>_N).
+                 <Constants.Unit base i>_R
+                 ->_R <GHC.Integer.Type.Integer>_R
+                 ->_R Sub (Sym (Constants.D:R:ProductUnitInteger[0]
+                                    <i>_N <base>_N))) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  $fMultiplyUnitUnit ::
+    (GHC.Classes.Ord base, GHC.Num.Num i, GHC.Classes.Eq i) =>
+    Constants.Multiply (Constants.Unit base i) (Constants.Unit base i)
+  DFunId
+  {- Arity: 5,
+     Strictness: <L,U(A,C(C1(U)),C(C1(U)),C(C1(U)),A,C(C1(U)),A,A)><L,U(1*U,A,A,A,A,A,1*C1(U))><L,U(A,C(C1(U)))><S,1*U(1*U)><S,1*U(1*U)>m,
+     Inline: INLINE (sat-args=0),
+     Unfolding: InlineRule (3, False, True)
+                Constants.$fMultiplyUnitUnit_$c*
+                  `cast`
+                (forall (base :: <*>_N) (i :: <*>_N).
+                 <GHC.Classes.Ord base>_R
+                 ->_R <GHC.Num.Num i>_R
+                 ->_R <GHC.Classes.Eq i>_R
+                 ->_R Sym (Constants.N:Multiply[0]
+                               <Constants.Unit base i>_N <Constants.Unit base i>_N)) -}
+ea95885ace7290902564e37dab36ae31
+  $fMultiplyUnitUnit1 :: GHC.Integer.Type.Integer
+  {- HasNoCafRefs, Unfolding: (0) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  $fMultiplyUnitUnit_$c* ::
+    (GHC.Classes.Ord base, GHC.Num.Num i, GHC.Classes.Eq i) =>
+    Constants.Unit base i
+    -> Constants.Unit base i
+    -> Constants.Product
+         (Constants.Unit base i) (Constants.Unit base i)
+  {- Arity: 5,
+     Strictness: <L,U(A,C(C1(U)),C(C1(U)),C(C1(U)),A,C(C1(U)),A,A)><L,U(1*U,A,A,A,A,A,1*C1(U))><L,U(A,C(C1(U)))><S,1*U(1*U)><S,1*U(1*U)>m,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (5, True, False)
+                (\ @ base
+                   @ i
+                   (w :: GHC.Classes.Ord base)
+                   (w1 :: GHC.Num.Num i)
+                   (w2 :: GHC.Classes.Eq i)
+                   (w3 :: Constants.Unit base i)
+                   (w4 :: Constants.Unit base i) ->
+                 case w3 of ww { Constants.Unit ww1 ->
+                 case w4 of ww2 { Constants.Unit ww3 ->
+                 case Constants.$w$c*
+                        @ base
+                        @ i
+                        w
+                        w1
+                        w2
+                        ww1
+                        ww3 of ww4 { Unit# ww5 ->
+                 (Constants.Unit @ base @ i ww5)
+                   `cast`
+                 (Sub (Sym (Constants.D:R:ProductUnitUnit[0]
+                                <i>_N <base>_N))) } } }) -}
+317af82592b88ef63271e38ee09224ab
+  $fOrdSIBaseUnit :: GHC.Classes.Ord Constants.SIBaseUnit
+  DFunId
+  {- HasNoCafRefs, Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Constants.SIBaseUnit
+                  Constants.$fEqSIBaseUnit
+                  Constants.$fOrdSIBaseUnit_$ccompare
+                  Constants.$fOrdSIBaseUnit_$c<
+                  Constants.$fOrdSIBaseUnit_$c<=
+                  Constants.$fOrdSIBaseUnit_$c>
+                  Constants.$fOrdSIBaseUnit_$c>=
+                  Constants.$fOrdSIBaseUnit_$cmax
+                  Constants.$fOrdSIBaseUnit_$cmin -}
+317af82592b88ef63271e38ee09224ab
+  $fOrdSIBaseUnit_$c< ::
+    Constants.SIBaseUnit -> Constants.SIBaseUnit -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Constants.SIBaseUnit)
+                   (b :: Constants.SIBaseUnit) ->
+                 case a of wild {
+                   Constants.Metre
+                   -> case b of wild1 {
+                        Constants.Metre -> GHC.Types.False
+                        Constants.Second -> GHC.Types.True
+                        Constants.Kilogram -> GHC.Types.True
+                        Constants.Ampere -> GHC.Types.True
+                        Constants.Kelvin -> GHC.Types.True }
+                   Constants.Second
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Constants.Kilogram -> GHC.Types.True
+                        Constants.Ampere -> GHC.Types.True
+                        Constants.Kelvin -> GHC.Types.True }
+                   Constants.Kilogram
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Constants.Ampere -> GHC.Types.True
+                        Constants.Kelvin -> GHC.Types.True }
+                   Constants.Ampere
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.False Constants.Kelvin -> GHC.Types.True }
+                   Constants.Kelvin
+                   -> case b of wild1 { DEFAULT -> GHC.Types.False } }) -}
+317af82592b88ef63271e38ee09224ab
+  $fOrdSIBaseUnit_$c<= ::
+    Constants.SIBaseUnit -> Constants.SIBaseUnit -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Constants.SIBaseUnit)
+                   (b :: Constants.SIBaseUnit) ->
+                 case a of wild {
+                   Constants.Metre -> case b of wild1 { DEFAULT -> GHC.Types.True }
+                   Constants.Second
+                   -> case b of wild1 {
+                        Constants.Metre -> GHC.Types.False
+                        Constants.Second -> GHC.Types.True
+                        Constants.Kilogram -> GHC.Types.True
+                        Constants.Ampere -> GHC.Types.True
+                        Constants.Kelvin -> GHC.Types.True }
+                   Constants.Kilogram
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Constants.Kilogram -> GHC.Types.True
+                        Constants.Ampere -> GHC.Types.True
+                        Constants.Kelvin -> GHC.Types.True }
+                   Constants.Ampere
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Constants.Ampere -> GHC.Types.True
+                        Constants.Kelvin -> GHC.Types.True }
+                   Constants.Kelvin
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.False
+                        Constants.Kelvin -> GHC.Types.True } }) -}
+317af82592b88ef63271e38ee09224ab
+  $fOrdSIBaseUnit_$c> ::
+    Constants.SIBaseUnit -> Constants.SIBaseUnit -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Constants.SIBaseUnit)
+                   (b :: Constants.SIBaseUnit) ->
+                 case a of wild {
+                   Constants.Metre -> case b of wild1 { DEFAULT -> GHC.Types.False }
+                   Constants.Second
+                   -> case b of wild1 {
+                        Constants.Metre -> GHC.Types.True
+                        Constants.Second -> GHC.Types.False
+                        Constants.Kilogram -> GHC.Types.False
+                        Constants.Ampere -> GHC.Types.False
+                        Constants.Kelvin -> GHC.Types.False }
+                   Constants.Kilogram
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Constants.Kilogram -> GHC.Types.False
+                        Constants.Ampere -> GHC.Types.False
+                        Constants.Kelvin -> GHC.Types.False }
+                   Constants.Ampere
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Constants.Ampere -> GHC.Types.False
+                        Constants.Kelvin -> GHC.Types.False }
+                   Constants.Kelvin
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Constants.Kelvin -> GHC.Types.False } }) -}
+317af82592b88ef63271e38ee09224ab
+  $fOrdSIBaseUnit_$c>= ::
+    Constants.SIBaseUnit -> Constants.SIBaseUnit -> GHC.Types.Bool
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Constants.SIBaseUnit)
+                   (b :: Constants.SIBaseUnit) ->
+                 case a of wild {
+                   Constants.Metre
+                   -> case b of wild1 {
+                        Constants.Metre -> GHC.Types.True
+                        Constants.Second -> GHC.Types.False
+                        Constants.Kilogram -> GHC.Types.False
+                        Constants.Ampere -> GHC.Types.False
+                        Constants.Kelvin -> GHC.Types.False }
+                   Constants.Second
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Constants.Kilogram -> GHC.Types.False
+                        Constants.Ampere -> GHC.Types.False
+                        Constants.Kelvin -> GHC.Types.False }
+                   Constants.Kilogram
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True
+                        Constants.Ampere -> GHC.Types.False
+                        Constants.Kelvin -> GHC.Types.False }
+                   Constants.Ampere
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.True Constants.Kelvin -> GHC.Types.False }
+                   Constants.Kelvin
+                   -> case b of wild1 { DEFAULT -> GHC.Types.True } }) -}
+317af82592b88ef63271e38ee09224ab
+  $fOrdSIBaseUnit_$ccompare ::
+    Constants.SIBaseUnit -> Constants.SIBaseUnit -> GHC.Types.Ordering
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (a :: Constants.SIBaseUnit)
+                   (b :: Constants.SIBaseUnit) ->
+                 case a of wild {
+                   Constants.Metre
+                   -> case b of wild1 {
+                        Constants.Metre -> GHC.Types.EQ
+                        Constants.Second -> GHC.Types.LT
+                        Constants.Kilogram -> GHC.Types.LT
+                        Constants.Ampere -> GHC.Types.LT
+                        Constants.Kelvin -> GHC.Types.LT }
+                   Constants.Second
+                   -> case b of wild1 {
+                        Constants.Metre -> GHC.Types.GT
+                        Constants.Second -> GHC.Types.EQ
+                        Constants.Kilogram -> GHC.Types.LT
+                        Constants.Ampere -> GHC.Types.LT
+                        Constants.Kelvin -> GHC.Types.LT }
+                   Constants.Kilogram
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        Constants.Kilogram -> GHC.Types.EQ
+                        Constants.Ampere -> GHC.Types.LT
+                        Constants.Kelvin -> GHC.Types.LT }
+                   Constants.Ampere
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT
+                        Constants.Ampere -> GHC.Types.EQ
+                        Constants.Kelvin -> GHC.Types.LT }
+                   Constants.Kelvin
+                   -> case b of wild1 {
+                        DEFAULT -> GHC.Types.GT Constants.Kelvin -> GHC.Types.EQ } }) -}
+317af82592b88ef63271e38ee09224ab
+  $fOrdSIBaseUnit_$cmax ::
+    Constants.SIBaseUnit
+    -> Constants.SIBaseUnit -> Constants.SIBaseUnit
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Constants.SIBaseUnit)
+                   (y :: Constants.SIBaseUnit) ->
+                 case x of wild {
+                   Constants.Metre -> y
+                   Constants.Second
+                   -> case y of wild1 {
+                        DEFAULT -> Constants.Second
+                        Constants.Kilogram -> Constants.Kilogram
+                        Constants.Ampere -> Constants.Ampere
+                        Constants.Kelvin -> Constants.Kelvin }
+                   Constants.Kilogram
+                   -> case y of wild1 {
+                        DEFAULT -> Constants.Kilogram
+                        Constants.Ampere -> Constants.Ampere
+                        Constants.Kelvin -> Constants.Kelvin }
+                   Constants.Ampere
+                   -> case y of wild1 {
+                        DEFAULT -> Constants.Ampere Constants.Kelvin -> Constants.Kelvin }
+                   Constants.Kelvin
+                   -> case y of wild1 { DEFAULT -> Constants.Kelvin } }) -}
+317af82592b88ef63271e38ee09224ab
+  $fOrdSIBaseUnit_$cmin ::
+    Constants.SIBaseUnit
+    -> Constants.SIBaseUnit -> Constants.SIBaseUnit
+  {- Arity: 2, HasNoCafRefs, Strictness: <S,1*U><S,1*U>,
+     Unfolding: (\ (x :: Constants.SIBaseUnit)
+                   (y :: Constants.SIBaseUnit) ->
+                 case x of wild {
+                   Constants.Metre -> case y of wild1 { DEFAULT -> Constants.Metre }
+                   Constants.Second
+                   -> case y of wild1 {
+                        Constants.Metre -> Constants.Metre
+                        Constants.Second -> Constants.Second
+                        Constants.Kilogram -> Constants.Second
+                        Constants.Ampere -> Constants.Second
+                        Constants.Kelvin -> Constants.Second }
+                   Constants.Kilogram
+                   -> case y of wild1 {
+                        DEFAULT -> wild1
+                        Constants.Kilogram -> Constants.Kilogram
+                        Constants.Ampere -> Constants.Kilogram
+                        Constants.Kelvin -> Constants.Kilogram }
+                   Constants.Ampere
+                   -> case y of wild1 {
+                        DEFAULT -> wild1
+                        Constants.Ampere -> Constants.Ampere
+                        Constants.Kelvin -> Constants.Ampere }
+                   Constants.Kelvin -> y }) -}
+317af82592b88ef63271e38ee09224ab
+  $fShowSIBaseUnit :: GHC.Show.Show Constants.SIBaseUnit
+  DFunId
+  {- Strictness: m, Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun:.
+                  @ Constants.SIBaseUnit
+                  Constants.$fShowSIBaseUnit_$cshowsPrec
+                  Constants.$fShowSIBaseUnit_$cshow
+                  Constants.$fShowSIBaseUnit_$cshowList -}
+850d55645ca73dddeada56fde1c4296a
+  $fShowSIBaseUnit1 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Kelvin"#) -}
+80b2ecbd12fe86cdf95b4f82d5471d81
+  $fShowSIBaseUnit2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Ampere"#) -}
+53a23edb6317532e6d5079fd5548b947
+  $fShowSIBaseUnit3 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Kilogram"#) -}
+d280302d2257058daf86d53c6a61f204
+  $fShowSIBaseUnit4 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Second"#) -}
+e46331dd1c81936e22e785989cfe52ec
+  $fShowSIBaseUnit5 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Metre"#) -}
+317af82592b88ef63271e38ee09224ab
+  $fShowSIBaseUnit_$cshow :: Constants.SIBaseUnit -> GHC.Base.String
+  {- Arity: 1, Strictness: <S,1*U>,
+     Unfolding: InlineRule (1, True, False)
+                (\ (x :: Constants.SIBaseUnit) ->
+                 Constants.$fShowSIBaseUnit_$cshowsPrec
+                   GHC.Show.shows22
+                   x
+                   (GHC.Types.[] @ GHC.Types.Char)) -}
+317af82592b88ef63271e38ee09224ab
+  $fShowSIBaseUnit_$cshowList ::
+    [Constants.SIBaseUnit] -> GHC.Show.ShowS
+  {- Arity: 2,
+     Unfolding: (GHC.Show.showList__
+                   @ Constants.SIBaseUnit
+                   Constants.$w$cshowsPrec) -}
+317af82592b88ef63271e38ee09224ab
+  $fShowSIBaseUnit_$cshowsPrec ::
+    GHC.Types.Int -> Constants.SIBaseUnit -> GHC.Show.ShowS
+  {- Arity: 3, Strictness: <L,A><S,1*U><L,1*U>, Inline: INLINE[0],
+     Unfolding: InlineRule (3, True, True)
+                (\ (w :: GHC.Types.Int)
+                   (w1 :: Constants.SIBaseUnit)
+                   (w2 :: GHC.Base.String) ->
+                 Constants.$w$cshowsPrec w1 w2) -}
+e91912f0e41ffcba00bc9e42178657d2
+  $fShowUnit ::
+    (GHC.Show.Show i, GHC.Show.Show base) =>
+    GHC.Show.Show (Constants.Unit base i)
+  DFunId
+  {- Arity: 2,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(C1(U))),A,A)>m,
+     Inline: [ALWAYS] CONLIKE,
+     Unfolding: DFun: @ base
+                      @ i
+                      ($dShow :: GHC.Show.Show i)
+                      ($dShow1 :: GHC.Show.Show base).
+                  @ (Constants.Unit base i)
+                  (Constants.$fShowUnit_$cshowsPrec @ base @ i $dShow $dShow1)
+                  (Constants.$fShowUnit_$cshow @ base @ i $dShow $dShow1)
+                  (Constants.$fShowUnit_$cshowList @ base @ i $dShow $dShow1) -}
+1495aed25396fed08bd44ed058fad896
+  $fShowUnit1 :: GHC.Types.Int
+  {- HasNoCafRefs, Unfolding: (GHC.Types.I# 0#) -}
+5fba97818b39aaa50e766bb08a0ebae3
+  $fShowUnit2 :: [GHC.Types.Char]
+  {- Unfolding: (GHC.CString.unpackCString# "Unit "#) -}
+e91912f0e41ffcba00bc9e42178657d2
+  $fShowUnit_$cshow ::
+    (GHC.Show.Show i, GHC.Show.Show base) =>
+    Constants.Unit base i -> GHC.Base.String
+  {- Arity: 3,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(C1(U))),A,A)><S,1*U(1*U)>,
+     Unfolding: InlineRule (3, True, False)
+                (\ @ base
+                   @ i
+                   ($dShow :: GHC.Show.Show i)
+                   ($dShow1 :: GHC.Show.Show base)
+                   (x :: Constants.Unit base i) ->
+                 case x of wild { Constants.Unit b1 ->
+                 GHC.Base.augment
+                   @ GHC.Types.Char
+                   (\ @ b
+                      (c1 :: GHC.Types.Char -> b -> b)[OneShot]
+                      (n :: b)[OneShot] ->
+                    GHC.Base.foldr @ GHC.Types.Char @ b c1 n Constants.$fShowUnit2)
+                   (Data.Map.Base.$w$cshowsPrec
+                      @ base
+                      @ i
+                      $dShow1
+                      $dShow
+                      11#
+                      b1
+                      (GHC.Types.[] @ GHC.Types.Char)) }) -}
+e91912f0e41ffcba00bc9e42178657d2
+  $fShowUnit_$cshowList ::
+    (GHC.Show.Show i, GHC.Show.Show base) =>
+    [Constants.Unit base i] -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(C1(U))),A,A)><S,1*U><L,U>,
+     Unfolding: InlineRule (4, True, False)
+                (\ @ base
+                   @ i
+                   ($dShow :: GHC.Show.Show i)
+                   ($dShow1 :: GHC.Show.Show base)
+                   (eta :: [Constants.Unit base i])
+                   (eta1 :: GHC.Base.String) ->
+                 GHC.Show.showList__
+                   @ (Constants.Unit base i)
+                   (Constants.$fShowUnit_$cshowsPrec
+                      @ base
+                      @ i
+                      $dShow
+                      $dShow1
+                      Constants.$fShowUnit1)
+                   eta
+                   eta1) -}
+e91912f0e41ffcba00bc9e42178657d2
+  $fShowUnit_$cshowsPrec ::
+    (GHC.Show.Show i, GHC.Show.Show base) =>
+    GHC.Types.Int -> Constants.Unit base i -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(C1(U))),A,A)><S(S),1*U(U)><S,1*U(1*U)>,
+     Inline: INLINE[0],
+     Unfolding: InlineRule (4, True, False)
+                (\ @ base
+                   @ i
+                   (w :: GHC.Show.Show i)
+                   (w1 :: GHC.Show.Show base)
+                   (w2 :: GHC.Types.Int)
+                   (w3 :: Constants.Unit base i) ->
+                 case w2 of ww { GHC.Types.I# ww1 ->
+                 case w3 of ww2 { Constants.Unit ww3 ->
+                 Constants.$w$cshowsPrec1 @ base @ i w w1 ww1 ww3 } }) -}
+bf9a5f02f142e89bceb06dac0ccc7dab
+  $tc'Ampere :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14191714930219456588##
+                   17010915488263179174##
+                   Constants.$trModule
+                   Constants.$tc'Ampere1) -}
+50b6d25247116a2387798833f5acab17
+  $tc'Ampere1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Ampere"#) -}
+36678a8b736de5f4a938a07994f65655
+  $tc'C:Divide :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   2493216913158487194##
+                   13999013793136428120##
+                   Constants.$trModule
+                   Constants.$tc'C:Divide1) -}
+6ef5442278977f94094b531a68926c90
+  $tc'C:Divide1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'C:Divide"#) -}
+b48274a66ff7ffd3ebdede2b5d61f5c3
+  $tc'C:Exponentiate :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5399877493478634925##
+                   15130822387816969898##
+                   Constants.$trModule
+                   Constants.$tc'C:Exponentiate1) -}
+6ddb62164a723d7ad7af8f8f6f346c11
+  $tc'C:Exponentiate1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'C:Exponentiate"#) -}
+adf80933238c60d292c254be0f3ba260
+  $tc'C:Multiply :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4134320943615651854##
+                   8628635362210613869##
+                   Constants.$trModule
+                   Constants.$tc'C:Multiply1) -}
+8abed09d9d82f50eb4942e8568fb555a
+  $tc'C:Multiply1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'C:Multiply"#) -}
+2cac704f3dcd81f392964f5b08343d65
+  $tc'Kelvin :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1492884225566501552##
+                   3089167083115628772##
+                   Constants.$trModule
+                   Constants.$tc'Kelvin1) -}
+1b68751c009164d25af8bb2feba4b40e
+  $tc'Kelvin1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Kelvin"#) -}
+2548427bcd9a02647de04b931812bfb7
+  $tc'Kilogram :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   7617895625836747637##
+                   6849897548831203237##
+                   Constants.$trModule
+                   Constants.$tc'Kilogram1) -}
+7bbc69bd22c76d595634d2461fd38214
+  $tc'Kilogram1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Kilogram"#) -}
+26537c4accdb4a47121444a6e566a99c
+  $tc'Metre :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   5166334191274240514##
+                   4409356410767089339##
+                   Constants.$trModule
+                   Constants.$tc'Metre1) -}
+f9fb07b51e9b92a370b23be92bf4d8a7
+  $tc'Metre1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Metre"#) -}
+543a6ae7a43b863af888afbe414cccc9
+  $tc'Second :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   6963018503987352178##
+                   2080140317798781450##
+                   Constants.$trModule
+                   Constants.$tc'Second1) -}
+7f299b034e42ee528e5a60f30a498817
+  $tc'Second1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Second"#) -}
+3e6275ec539b87c0e7fc877cf59e7203
+  $tc'Unit :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   12570714669685006642##
+                   8616582290779499261##
+                   Constants.$trModule
+                   Constants.$tc'Unit1) -}
+7824c8c5c7bdf8230f3584d7ba51824c
+  $tc'Unit1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "'Unit"#) -}
+1d8f196a213a0cbfa1c2bc41cf914988
+  $tcDivide :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   13943097439263652013##
+                   5028516036254845877##
+                   Constants.$trModule
+                   Constants.$tcDivide1) -}
+71f5402763160786a1448aa7ce35c705
+  $tcDivide1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Divide"#) -}
+7d9400cd39d3907839f1ef66173b4e50
+  $tcExponentiate :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   4395034541703800553##
+                   14590768204623064112##
+                   Constants.$trModule
+                   Constants.$tcExponentiate1) -}
+48c99b9bd005f6144f82d534a9a45157
+  $tcExponentiate1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Exponentiate"#) -}
+3035e2141437af50a4ac3ce236bc1b53
+  $tcMultiply :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   1304215441563924786##
+                   12213456124549633221##
+                   Constants.$trModule
+                   Constants.$tcMultiply1) -}
+f1579c7d34a76ffedb8f0c69235f37cd
+  $tcMultiply1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Multiply"#) -}
+5855fb2a848aa7edbb48d885bd068310
+  $tcSIBaseUnit :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   14235240441913828299##
+                   4580465985109401332##
+                   Constants.$trModule
+                   Constants.$tcSIBaseUnit1) -}
+2bc5ecf878c61c7c412e7d8a4bc35a8b
+  $tcSIBaseUnit1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "SIBaseUnit"#) -}
+8612d4dd932790cd19e319ef87acdc07
+  $tcUnit :: GHC.Types.TyCon
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.TyCon
+                   11615660663903116430##
+                   15202542418090065281##
+                   Constants.$trModule
+                   Constants.$tcUnit1) -}
+2202cfb4bdb252e79de94cfc58d04524
+  $tcUnit1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Unit"#) -}
+a766a6c843efed007c0d2c2469800e32
+  $trModule :: GHC.Types.Module
+  {- HasNoCafRefs, Strictness: m,
+     Unfolding: (GHC.Types.Module
+                   Constants.$trModule2
+                   Constants.$trModule1) -}
+03b054675f6fedda1b4917771ecad5a6
+  $trModule1 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS "Constants"#) -}
+a08b7e45f7604f05d511ac4600da7a27
+  $trModule2 :: GHC.Types.TrName
+  {- HasNoCafRefs, Strictness: m1,
+     Unfolding: (GHC.Types.TrNameS
+                   "constants-united-0.1.0.0-Dsw9qjzcukv1YjvdfUjtl9"#) -}
+1b677f0ad932ffed1ac9e28ec2be610f
+  $w$c* ::
+    (GHC.Classes.Ord base, GHC.Num.Num i, GHC.Classes.Eq i) =>
+    Data.Map.Base.Map base i
+    -> Data.Map.Base.Map base i -> (# Data.Map.Base.Map base i #)
+  {- Arity: 5,
+     Strictness: <L,U(A,C(C1(U)),C(C1(U)),C(C1(U)),A,C(C1(U)),A,A)><L,U(1*U,A,A,A,A,A,1*C1(U))><L,U(A,C(C1(U)))><L,1*U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ base
+                   @ i
+                   (w :: GHC.Classes.Ord base)
+                   (w1 :: GHC.Num.Num i)
+                   (w2 :: GHC.Classes.Eq i)
+                   (ww :: Data.Map.Base.Map base i)
+                   (ww1 :: Data.Map.Base.Map base i) ->
+                 (# let {
+                      ds :: i = GHC.Num.fromInteger @ i w1 Constants.$fMultiplyUnitUnit1
+                    } in
+                    let {
+                      f :: i -> i -> i = GHC.Num.+ @ i w1
+                    } in
+                    Data.Map.Base.filterWithKey
+                      @ base
+                      @ i
+                      (\ (ds1 :: base) (x :: i)[OneShot] -> GHC.Classes./= @ i w2 x ds)
+                      (Data.Map.Strict.unionWithKey
+                         @ base
+                         @ i
+                         w
+                         (\ (ds1 :: base) (x :: i)[OneShot] (y :: i)[OneShot] -> f x y)
+                         ww
+                         ww1) #)) -}
+317af82592b88ef63271e38ee09224ab
+  $w$cshowsPrec ::
+    Constants.SIBaseUnit -> GHC.Base.String -> GHC.Base.String
+  {- Arity: 2, Strictness: <S,1*U><L,1*U>, Inline: [0],
+     Unfolding: (\ (w :: Constants.SIBaseUnit)
+                   (w1 :: GHC.Base.String) ->
+                 case w of wild {
+                   Constants.Metre
+                   -> GHC.Base.++ @ GHC.Types.Char Constants.$fShowSIBaseUnit5 w1
+                   Constants.Second
+                   -> GHC.Base.++ @ GHC.Types.Char Constants.$fShowSIBaseUnit4 w1
+                   Constants.Kilogram
+                   -> GHC.Base.++ @ GHC.Types.Char Constants.$fShowSIBaseUnit3 w1
+                   Constants.Ampere
+                   -> GHC.Base.++ @ GHC.Types.Char Constants.$fShowSIBaseUnit2 w1
+                   Constants.Kelvin
+                   -> GHC.Base.++
+                        @ GHC.Types.Char
+                        Constants.$fShowSIBaseUnit1
+                        w1 }) -}
+0acdefa950cb33acd2ce92883ff06b1c
+  $w$cshowsPrec1 ::
+    (GHC.Show.Show i, GHC.Show.Show base) =>
+    GHC.Prim.Int# -> Data.Map.Base.Map base i -> GHC.Show.ShowS
+  {- Arity: 4,
+     Strictness: <L,U(C(C1(U)),A,A)><L,U(C(C1(C1(U))),A,A)><S,U><L,1*U>,
+     Inline: [0],
+     Unfolding: (\ @ base
+                   @ i
+                   (w :: GHC.Show.Show i)
+                   (w1 :: GHC.Show.Show base)
+                   (ww :: GHC.Prim.Int#)
+                   (ww1 :: Data.Map.Base.Map base i) ->
+                 let {
+                   g :: GHC.Base.String -> GHC.Base.String
+                   = Data.Map.Base.$w$cshowsPrec @ base @ i w1 w 11# ww1
+                 } in
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 11#) of wild {
+                   GHC.Types.False
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Base.++ @ GHC.Types.Char Constants.$fShowUnit2 (g x)
+                   GHC.Types.True
+                   -> \ (x :: GHC.Base.String) ->
+                      GHC.Types.:
+                        @ GHC.Types.Char
+                        GHC.Show.shows7
+                        (GHC.Base.++
+                           @ GHC.Types.Char
+                           Constants.$fShowUnit2
+                           (g (GHC.Types.: @ GHC.Types.Char GHC.Show.shows4 x))) }) -}
+317af82592b88ef63271e38ee09224ab
+  $w$ctoEnum :: GHC.Prim.Int# -> Constants.SIBaseUnit
+  {- Arity: 1, Strictness: <S,U>, Inline: [0],
+     Unfolding: (\ (ww :: GHC.Prim.Int#) ->
+                 case GHC.Prim.tagToEnum#
+                        @ GHC.Types.Bool
+                        (GHC.Prim.>=# ww 0#) of wild {
+                   GHC.Types.False -> Constants.$fEnumSIBaseUnit6 ww
+                   GHC.Types.True
+                   -> case GHC.Prim.tagToEnum#
+                             @ GHC.Types.Bool
+                             (GHC.Prim.<=# ww 4#) of wild1 {
+                        GHC.Types.False -> Constants.$fEnumSIBaseUnit6 ww
+                        GHC.Types.True
+                        -> GHC.Prim.tagToEnum# @ Constants.SIBaseUnit ww } }) -}
+077a25b1ea6ce561610ad62fd1c29f17
+  axiom D:R:ProductDoubleUnit::
+    [i, base]
+      Constants.Product GHC.Types.Double (Constants.Unit base i)
+        = Constants.Unit base i
+077a25b1ea6ce561610ad62fd1c29f17
+  axiom D:R:ProductFloatUnit::
+    [i, base]
+      Constants.Product GHC.Types.Float (Constants.Unit base i)
+        = Constants.Unit base i
+077a25b1ea6ce561610ad62fd1c29f17
+  axiom D:R:ProductIntUnit::
+    [i, base]
+      Constants.Product GHC.Types.Int (Constants.Unit base i)
+        = Constants.Unit base i
+077a25b1ea6ce561610ad62fd1c29f17
+  axiom D:R:ProductIntegerUnit::
+    [i, base]
+      Constants.Product GHC.Integer.Type.Integer (Constants.Unit base i)
+        = Constants.Unit base i
+077a25b1ea6ce561610ad62fd1c29f17
+  axiom D:R:ProductUnitDouble::
+    [i, base]
+      Constants.Product (Constants.Unit base i) GHC.Types.Double
+        = Constants.Unit base i
+077a25b1ea6ce561610ad62fd1c29f17
+  axiom D:R:ProductUnitFloat::
+    [i, base]
+      Constants.Product (Constants.Unit base i) GHC.Types.Float
+        = Constants.Unit base i
+077a25b1ea6ce561610ad62fd1c29f17
+  axiom D:R:ProductUnitInt::
+    [i, base]
+      Constants.Product (Constants.Unit base i) GHC.Types.Int
+        = Constants.Unit base i
+077a25b1ea6ce561610ad62fd1c29f17
+  axiom D:R:ProductUnitInteger::
+    [i, base]
+      Constants.Product (Constants.Unit base i) GHC.Integer.Type.Integer
+        = Constants.Unit base i
+077a25b1ea6ce561610ad62fd1c29f17
+  axiom D:R:ProductUnitUnit::
+    [i, base]
+      Constants.Product (Constants.Unit base i) (Constants.Unit base i)
+        = Constants.Unit base i
+96ad0a08534197a003b0d6d1a885c1be
+  class Divide a b where
+    type family Quotient a b :: * open
+    (/) :: a -> b -> Constants.Quotient a b
+    {-# MINIMAL (/) #-}
+5ad0f72a2a716a1bfe979e86da4c71a1
+  class Exponentiate a b where
+    (**) :: a -> b -> a
+    {-# MINIMAL (**) #-}
+077a25b1ea6ce561610ad62fd1c29f17
+  class Multiply a b where
+    type family Product a b :: * open
+    (*) :: a -> b -> Constants.Product a b
+    {-# MINIMAL (*) #-}
+317af82592b88ef63271e38ee09224ab
+  data SIBaseUnit = Metre | Second | Kilogram | Ampere | Kelvin
+e91912f0e41ffcba00bc9e42178657d2
+  type role Unit nominal representational
+  data Unit base i = Unit (Data.Map.Base.Map base i)
+instance [safe] GHC.Enum.Bounded [Constants.SIBaseUnit]
+  = Constants.$fBoundedSIBaseUnit
+instance [safe] GHC.Enum.Enum [Constants.SIBaseUnit]
+  = Constants.$fEnumSIBaseUnit
+instance [safe] GHC.Classes.Eq [Constants.SIBaseUnit]
+  = Constants.$fEqSIBaseUnit
+instance [safe] GHC.Classes.Eq [Constants.Unit]
+  = Constants.$fEqUnit
+instance [safe] Constants.Multiply [GHC.Types.Double,
+                                    Constants.Unit]
+  = Constants.$fMultiplyDoubleUnit
+instance [safe] Constants.Multiply [GHC.Types.Float,
+                                    Constants.Unit]
+  = Constants.$fMultiplyFloatUnit
+instance [safe] Constants.Multiply [GHC.Types.Int, Constants.Unit]
+  = Constants.$fMultiplyIntUnit
+instance [safe] Constants.Multiply [GHC.Integer.Type.Integer,
+                                    Constants.Unit]
+  = Constants.$fMultiplyIntegerUnit
+instance [safe] Constants.Multiply [Constants.Unit,
+                                    GHC.Types.Double]
+  = Constants.$fMultiplyUnitDouble
+instance [safe] Constants.Multiply [Constants.Unit,
+                                    GHC.Types.Float]
+  = Constants.$fMultiplyUnitFloat
+instance [safe] Constants.Multiply [Constants.Unit, GHC.Types.Int]
+  = Constants.$fMultiplyUnitInt
+instance [safe] Constants.Multiply [Constants.Unit,
+                                    GHC.Integer.Type.Integer]
+  = Constants.$fMultiplyUnitInteger
+instance [safe] Constants.Multiply [Constants.Unit, Constants.Unit]
+  = Constants.$fMultiplyUnitUnit
+instance [safe] GHC.Classes.Ord [Constants.SIBaseUnit]
+  = Constants.$fOrdSIBaseUnit
+instance [safe] GHC.Show.Show [Constants.SIBaseUnit]
+  = Constants.$fShowSIBaseUnit
+instance [safe] GHC.Show.Show [Constants.Unit]
+  = Constants.$fShowUnit
+family instance Constants.Product [Constants.Unit],
+                                  [Constants.Unit]
+  = Constants.D:R:ProductUnitUnit
+family instance Constants.Product [GHC.Types.Int], [Constants.Unit]
+  = Constants.D:R:ProductIntUnit
+family instance Constants.Product [Constants.Unit], [GHC.Types.Int]
+  = Constants.D:R:ProductUnitInt
+family instance Constants.Product [GHC.Integer.Type.Integer],
+                                  [Constants.Unit]
+  = Constants.D:R:ProductIntegerUnit
+family instance Constants.Product [Constants.Unit],
+                                  [GHC.Integer.Type.Integer]
+  = Constants.D:R:ProductUnitInteger
+family instance Constants.Product [GHC.Types.Float],
+                                  [Constants.Unit]
+  = Constants.D:R:ProductFloatUnit
+family instance Constants.Product [Constants.Unit],
+                                  [GHC.Types.Float]
+  = Constants.D:R:ProductUnitFloat
+family instance Constants.Product [GHC.Types.Double],
+                                  [Constants.Unit]
+  = Constants.D:R:ProductDoubleUnit
+family instance Constants.Product [Constants.Unit],
+                                  [GHC.Types.Double]
+  = Constants.D:R:ProductUnitDouble
+vectorised variables:
+vectorised tycons:
+vectorised reused tycons:
+parallel variables:
+parallel tycons:
+trusted: safe
+require own pkg trusted: False
+
