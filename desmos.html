@@ -32,6 +32,19 @@
                                                            '#5E35B1', '#3F51B5', '#42A5F5',
                                                            '#4CAF50', '#FFC107', '#CDDC39']});
       cal.updateSettings({fontSize: 22});
+      
+      elt.addEventListener('drop', (e) => {
+        e.stopPropagation();
+        e.preventDefault();
+        let file   = e.dataTransfer.files[0];
+        let reader = new FileReader();
+        reader.onload = (e) => {
+          let state = JSON.parse(e.target.result);
+          cal.setState(state);
+        }
+        reader.readAsText(file)
+
+      });
 
       window.cal = cal;
 
